@@ -45,15 +45,6 @@ const MultipleChoiceExercise = ({
 
     return (
         <div className="flex flex-col items-center justify-center bg-gray-50 p-6">
-            <div className="w-1/2 bg-gray-300 h-2 mb-4 relative">
-                <div
-                    className="bg-red-600 h-full"
-                    style={{ width: `${progress}%` }}
-                ></div>
-                <span className="absolute top-0 right-0 text-xs font-semibold text-gray-700 mr-2 mt-2">
-                    {progressPercentage}%
-                </span>
-            </div>
             <div className="flex flex-col space-y-4">
                 <span className="text-xl font-semibold">{prompt}</span>
                 <span className="text-l font-semibold">{labelText}</span>
