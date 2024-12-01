@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MultipleChoiceQuiz from "./components/MultipleChoiceQuiz/MultipleChoiceQuiz";
 import TopicList from "./components/TopicList/TopicList";
 import LandingPage from "./components/LandingPage/LandingPage";
+import VocabQuestionQuiz from "./components/VocabQuiz/VocabQuestionQuiz";
+import VocabList from "./components/TopicList/VocabList";
 
 function App() {
     return (
@@ -16,6 +18,8 @@ function App() {
                     <Route path="/quiz/:topic" element={<Quiz />} />
                     <Route path="/multi-choice/:topic" element={<MultipleChoiceQuiz />} />
                     <Route path="/topic-list" element={<TopicList />} />
+                    <Route path="/vocab-list" element={<VocabList />} />
+                    <Route path="/vocab/:topic" element={<VocabQuestionQuiz/>} />
                 </Routes>
             </BrowserRouter>
         </>

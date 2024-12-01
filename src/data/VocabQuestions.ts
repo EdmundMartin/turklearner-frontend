@@ -8,7 +8,7 @@ interface VocabQuestion {
 
 const VocabQuestions: Map<string, VocabQuestion[]> = new Map<string, VocabQuestion[]>()
 
-VocabQuestions.set('common-vocab-one', [
+VocabQuestions.set('vocab-one', [
     { Word: "bir", Definition: "One", Choices: ["My/Mine", "One", "Me (object)", "I"] },
     { Word: "bu", Definition: "This", Choices: ["Not", "This", "Here"] },
     { Word: "ne", Definition: "What", Choices: ["Question particle", "Your/Yours", "What", "To me"] },
@@ -60,3 +60,5 @@ VocabQuestions.set('common-vocab-one', [
     { Word: "şu", Definition: "That (nearby)", Choices: ["Does not exist", "To me", "No", "That (nearby)"] },
     { Word: "misin", Definition: "Are you?", Choices: ["Are you?", "What", "Exists/There is"] },
 ]);
+
+export default VocabQuestions;

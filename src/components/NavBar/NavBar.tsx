@@ -29,13 +29,14 @@ const Navbar = () => {
                     >
                         Topics
                     </a>
-                    {/*
+
                     <a
-                        href="/services"
+                        href="/vocab-list"
                         className="text-white hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-red-300"
                     >
-                        Services
+                        Vocab Trainer
                     </a>
+                    {/*
                     <a
                         href="/contact"
                         className="text-white hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-red-300"
