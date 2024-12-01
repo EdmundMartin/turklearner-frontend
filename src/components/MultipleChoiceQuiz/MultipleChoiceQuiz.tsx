@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MultipleChoiceExercise from "../MultipleChoiceExercise/MultipleChoiceExercise";
-import {useParams} from "react-router";
+import {useNavigate, useParams} from "react-router";
 import MultiChoiceQuestions from "../../data/MultiChoiceQuestions";
 
 
@@ -8,7 +8,7 @@ const MultipleChoiceQuiz = () => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [isAnswered, setIsAnswered] = useState(false); // Track if the question has been answered
     const [isCorrect, setIsCorrect] = useState<boolean | null>(null); // Track if the answer is correct
-
+    const navigate = useNavigate()
     const { topic } = useParams<{ topic: string }>()
     if (topic === undefined) {
         return <div>
@@ -37,8 +37,7 @@ const MultipleChoiceQuiz = () => {
             setIsCorrect(null); // Reset correctness state
             console.log("Moving to next question:", currentQuestionIndex + 1); // Debugging log
         } else {
-            alert("No more questions left. Quiz Finished!");
-            // You can navigate to home or reset the quiz here
+            navigate("/topic-list")
         }
     };
 
