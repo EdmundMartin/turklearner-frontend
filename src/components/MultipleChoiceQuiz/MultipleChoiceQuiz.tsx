@@ -24,18 +24,15 @@ const MultipleChoiceQuiz = () => {
 
 
     const handleAnswered = (correct: boolean) => {
-        console.log("Question answered:", correct); // Debugging log
         setIsCorrect(correct); // Update correctness when question is answered
         setIsAnswered(true); // Mark question as answered
     };
 
     const handleNextQuestion = () => {
-        console.log("Handle next question clicked."); // Debugging log
         if (currentQuestionIndex < questions.length - 1) {
             setCurrentQuestionIndex((prevIndex) => prevIndex + 1); // Move to next question
             setIsAnswered(false); // Reset answered flag
             setIsCorrect(null); // Reset correctness state
-            console.log("Moving to next question:", currentQuestionIndex + 1); // Debugging log
         } else {
             navigate("/topic-list")
         }
