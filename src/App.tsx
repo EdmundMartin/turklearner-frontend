@@ -7,6 +7,8 @@ import TopicList from "./components/TopicList/TopicList";
 import LandingPage from "./components/LandingPage/LandingPage";
 import VocabQuestionQuiz from "./components/VocabQuiz/VocabQuestionQuiz";
 import VocabList from "./components/TopicList/VocabList";
+import Plurals from "./components/GrammarRules/Plurals";
+import SimpleConjugationOne from "./components/GrammarRules/SimpleConjugationOne";
 
 function App() {
     return (
@@ -20,6 +22,8 @@ function App() {
                     <Route path="/topic-list" element={<TopicList />} />
                     <Route path="/vocab-list" element={<VocabList />} />
                     <Route path="/vocab/:topic" element={<VocabQuestionQuiz/>} />
+                    <Route path="/guides/plurals" element={<Plurals />} />
+                    <Route path="/guides/conjugation-one" element={<SimpleConjugationOne />} />
                 </Routes>
             </BrowserRouter>
         </>
