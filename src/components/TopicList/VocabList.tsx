@@ -25,7 +25,7 @@ const tableData: VocabListData[] = [
     {
         title: '151st - 200th Most Common Words',
         description: 'Practice common Turkish words',
-        link: '/vocab/vocab-three',
+        link: '/vocab/vocab-four',
     },
 ];
 
