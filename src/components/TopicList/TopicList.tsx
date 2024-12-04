@@ -20,6 +20,12 @@ const tableData: TopicListData[] = [
     link: '/quiz/common-verbs',
     guideLink: '/guides/conjugation-one',
   },
+  {
+    title: "Question words",
+    description: 'Learn how to pick the correct question word to use',
+    link: '/multi-choice/question-tags',
+    guideLink: '/guides/question-tags-one'
+  }
 ]
 
 const TopicList: React.FC = () => {
@@ -73,6 +79,16 @@ const TopicList: React.FC = () => {
           ))}
         </tbody>
       </table>
+      <div className="mt-6 bg-red-50 p-4 rounded-lg">
+        <h2 className="text-lg font-semibold text-red-800">
+          Master Turkish Grammar with Ease!
+        </h2>
+        <p className="text-gray-700 mt-2">
+          Did you know that mastering key Turkish grammar concepts can dramatically improve your ability to communicate with confidence?
+          With our interactive online exercises, you can practice and repeat essential grammar rules at your own pace.
+          Build a strong foundation step by step and watch your fluency soar. Start mastering Turkish grammar today!
+        </p>
+      </div>
     </div>
   )
 }

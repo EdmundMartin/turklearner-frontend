@@ -250,4 +250,182 @@ const MultiChoiceQuestions: Map<string, MultiChoiceQuestion[]> = new Map<
   ],
 ])
 
+MultiChoiceQuestions.set("question-tags", [
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Bu doğru ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mu"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Evet güzel ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mi"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "O çok sıcak ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mı"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Bu araba eski ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mi"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Yemek hazır ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mı"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Bu senin kitabın ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mı"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "O evde yalnız ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mu"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Saat dokuz ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mu"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Bugün hava güzel ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mi"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Bu senin çantan ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mı"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Su temiz ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mi"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Evin önü boş ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mu"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Bu koltuk rahat ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mu"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Yemek sıcak ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mı"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Bu kalem kırmızı ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mı"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Kız mutlu ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mu"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Oğlum okulda ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mu"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Çay sıcak ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mı"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Annen evde ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mi"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Bu defter senin ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mi"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Film uzun ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mu"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Tatlı lezzetli ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mi"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Burası sessiz ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mi"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Bu yol doğru ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mu"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Ev temiz ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mi"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Elbise yeni ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mi"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Bu telefon kırık ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mı"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Bu kitap pahalı ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mı"
+  },
+  {
+    labelText: "Pick the correct question word for the following sentence",
+    prompt: "Yemek hazır ....?",
+    choices: ["mi", "mu", "mü", "mı"],
+    correctAnswer: "mı"
+  }
+]);
+
+
 export default MultiChoiceQuestions

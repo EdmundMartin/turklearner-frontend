@@ -58,7 +58,7 @@ const VocabList: React.FC = () => {
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-2 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300"
                 >
-                  Visit
+                  Study Now
                 </a>
               </td>
             </tr>

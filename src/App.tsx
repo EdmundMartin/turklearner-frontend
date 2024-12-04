@@ -9,6 +9,7 @@ import VocabQuestionQuiz from './components/VocabQuiz/VocabQuestionQuiz'
 import VocabList from './components/TopicList/VocabList'
 import Plurals from './components/GrammarRules/Plurals'
 import SimpleConjugationOne from './components/GrammarRules/SimpleConjugationOne'
+import QuestionTags from "./components/GrammarRules/QuestionTags";
 
 function App() {
   return (
@@ -27,7 +28,9 @@ function App() {
             path="/guides/conjugation-one"
             element={<SimpleConjugationOne />}
           />
+          <Route path="/guides/question-tags-one" element={<QuestionTags />} />
         </Routes>
+
       </BrowserRouter>
     </>
   )
