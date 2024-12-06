@@ -25,6 +25,16 @@ const tableData: VocabListData[] = [
     description: 'Practice common Turkish words',
     link: '/vocab/vocab-four',
   },
+  {
+    title: '200th - 250th Most Common Words',
+    description: 'Practice common Turkish words',
+    link: '/vocab/vocab-five',
+  },
+  {
+    title: '251st - 300th Most Common Words',
+    description: 'Practice common Turkish words',
+    link: '/vocab/vocab-six',
+  }
 ]
 
 const VocabList: React.FC = () => {
