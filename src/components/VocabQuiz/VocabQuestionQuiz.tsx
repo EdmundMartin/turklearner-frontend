@@ -1,20 +1,45 @@
-import { useState } from 'react'
+import {useEffect, useState} from 'react'
 import VocabQuestionExercise from './VocabQuestionExercise'
 import { useNavigate, useParams } from 'react-router'
-import VocabQuestions from '../../data/VocabQuestions'
+import VocabQuestions, {VocabQuestion} from '../../data/VocabQuestions'
 
 const VocabQuestionQuiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [isAnswered, setIsAnswered] = useState(false) // Track if the question has been answered
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null) // Track if the answer is correct
+  const [questions, setQuestions] = useState<VocabQuestion[]>([]);
   const navigate = useNavigate()
   const { topic } = useParams<{ topic: string }>()
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const resp = await fetch('http://localhost:8080/api/tr/vocab/two', {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          credentials: 'include',
+        });
+
+        let jsonRsp = await resp.json();
+        console.log(resp)
+        const myObject: VocabQuestion[] = jsonRsp as VocabQuestion[];
+        setQuestions(myObject);
+
+      } catch (e) {
+        // TODO - What the hell do you do here?
+      }
+    }
+    fetchData();
+      }, []
+  )
 
   if (topic === undefined) {
     return <div>No topic selected</div>
   }
 
-  const questions = VocabQuestions.get(topic)
+
 
   if (!questions || questions.length === 0) {
     return <div>No questions available for this topic</div>

@@ -1,4 +1,4 @@
-interface VocabQuestion {
+export interface VocabQuestion {
   Word: string
   Choices: string[]
   Definition: string
