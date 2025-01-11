@@ -25,6 +25,11 @@ const tableData: TopicListData[] = [
     description: 'Learn how to pick the correct question word to use',
     link: '/multi-choice/question-tags',
     guideLink: '/guides/question-tags-one'
+  },
+  {
+    title: "Consonant Mutation - Past Tense Simple",
+    description: "Consonant mutation in simple past tense",
+    link: "/multi-choice/consonant-mutation-past-tense-simple"
   }
 ]
 

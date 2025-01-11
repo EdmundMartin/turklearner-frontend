@@ -2,6 +2,12 @@ import { useState } from 'react'
 import MultipleChoiceExercise from '../MultipleChoiceExercise/MultipleChoiceExercise'
 import { useNavigate, useParams } from 'react-router'
 import MultiChoiceQuestions from '../../data/MultiChoiceQuestions'
+import PastTense from "../GrammarHelp/PastTense";
+
+
+const grammarHelp = new Map<string, React.FC>();
+grammarHelp.set("consonant-mutation-past-tense-simple", PastTense)
+
 
 const MultipleChoiceQuiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
@@ -14,6 +20,9 @@ const MultipleChoiceQuiz = () => {
   }
 
   const questions = MultiChoiceQuestions.get(topic)
+
+  let GramComp = grammarHelp.get(topic)
+
 
   const currentQuestion = questions[currentQuestionIndex]
 
@@ -48,6 +57,11 @@ const MultipleChoiceQuiz = () => {
         </span>
       </div>
       <div className="flex flex-col space-y-6 w-full max-w-md">
+        {
+          GramComp && (
+              <GramComp />
+            )
+        }
         <MultipleChoiceExercise
           labelText={currentQuestion.labelText}
           prompt={currentQuestion.prompt}

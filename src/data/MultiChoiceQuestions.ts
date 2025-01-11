@@ -250,6 +250,33 @@ const MultiChoiceQuestions: Map<string, MultiChoiceQuestion[]> = new Map<
   ],
 ])
 
+MultiChoiceQuestions.set("consonant-mutation-past-tense-simple", [
+  {
+    labelText: "Add the simple past tense ending -di/-dı/-dü/-ti/-tı/tu/tü",
+    prompt: "gorün",
+    choices: ["di", "dı", "dü", "ti", "tı", "tu", "tü"],
+    correctAnswer: "dü"
+  },
+  {
+    labelText: "Add the simple past tense ending -di/-dı/-dü/-ti/-tı/tu/tü",
+    prompt: "sat",
+    choices: ["di", "dı", "dü", "ti", "tı", "tu", "tü"],
+    correctAnswer: "tı"
+  },
+  {
+    labelText: "Add the simple past tense ending -di/-dı/-dü/-ti/-tı/tu/tü",
+    prompt: "düş",
+    choices: ["di", "dı", "dü", "ti", "tı", "tu", "tü"],
+    correctAnswer: "tü"
+  },
+  {
+    labelText: "Add the simple past tense ending -di/-dı/-dü/-ti/-tı/tu/tü",
+    prompt: "düşün",
+    choices: ["di", "dı", "dü", "ti", "tı", "tu", "tü"],
+    correctAnswer: "dü"
+  },
+])
+
 MultiChoiceQuestions.set("question-tags", [
   {
     labelText: "Pick the correct question word for the following sentence",
